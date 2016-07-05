@@ -28,7 +28,7 @@ public class givescore : MonoBehaviour
         Vector3 screenSpace = Camera.main.WorldToScreenPoint(transform.position);//三维物体坐标转屏幕坐标  change the three-dimensional coordinate into screen coordinate
         //将鼠标屏幕坐标转为三维坐标，再计算物体位置与鼠标之间的距离  change the three-dimensional coordinate into screen coordinate, and then calculate the distance between the place of object and place of the mouse
         var offset = transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenSpace.z));
-        print("down");
+       // print("down");
         while (Input.GetMouseButton(0))
         {
             Vector3 curScreenSpace = new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenSpace.z);
