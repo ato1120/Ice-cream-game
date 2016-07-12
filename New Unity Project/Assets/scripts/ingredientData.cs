@@ -20,14 +20,14 @@ public class ingredientData : MonoBehaviour {
 
 
     //define and intitial the score of each ingredient
-    int chocolateSauce = 0;    
-    int raspberrySauce = 0;
-    int waferTopping = 0;
-    int cherryTopping = 0;
-    int plainCone = 0;
-    int sprinkleCone = 0;
-    int vanillaFlavor = 0;
-    int strawberryFlavor = 0;
+   static public int chocolateSauce = 0;    
+   static public int raspberrySauce = 0;
+    static public int waferTopping = 0;
+    static public int cherryTopping = 0;
+    static public int plainCone = 0;
+    static public int sprinkleCone = 0;
+    static public int vanillaFlavor = 0;
+    static public int strawberryFlavor = 0;
 
     //define and intitial the sign of changing the score of each ingredient(with the first character of each ingredient) 
     int choScoreChange = 0;
@@ -38,6 +38,7 @@ public class ingredientData : MonoBehaviour {
     int sprScoreChange = 0;
     int vanScoreChange = 0;
     int strScoreChange = 0;
+
 
     //the size of the ingredient card
     double halfXsize = 1.3;
@@ -97,7 +98,7 @@ public class ingredientData : MonoBehaviour {
         position(x4, y4, -10);
 
         // show the score of each ingredient at the bottom of the screen
-        Debug.Log("strawberryFlavor=" + strawberryFlavor.ToString("f4")
+       Debug.Log("strawberryFlavor=" + strawberryFlavor.ToString("f4")
                   + "   raspberrySauce="+raspberrySauce.ToString("f4")
                   + "   vanillaFlavor="+vanillaFlavor.ToString("f4")
                   + "   waferTopping="+ waferTopping.ToString("f4")
@@ -241,4 +242,9 @@ public class ingredientData : MonoBehaviour {
         strScoreChange = 0;
 
     }
+
+
+
+
+
 }

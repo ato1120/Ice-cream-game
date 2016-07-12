@@ -29,6 +29,7 @@ public class GoBack : MonoBehaviour {
         if (Input.GetMouseButtonDown(0))
         {
             Application.LoadLevel("ice cream");
+            //Application.LoadLevelAdditive("ice cream");
         }
     }
     // Update is called once per frame

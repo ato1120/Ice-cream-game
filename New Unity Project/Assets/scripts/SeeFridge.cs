@@ -28,6 +28,7 @@ public class SeeFridge : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             Application.LoadLevel("Assign the score(fridge)");
+           // Application.LoadLevelAdditive("Assign the score(fridge)");
         }
     }
     // Update is called once per frame
