@@ -20,8 +20,21 @@ public class icecreamData : MonoBehaviour {
     public int icecream13 = 0;
     public int icecream14 = 0;
     public int icecream15 = 0;
+
+    //define and intitial the score of each ingredient
+    static public int chocolateSauce = 0;
+    static public int raspberrySauce = 0;
+    static public int waferTopping = 0;
+    static public int cherryTopping = 0;
+    static public int plainCone = 0;
+    static public int sprinkleCone = 0;
+    static public int vanillaFlavor = 0;
+    static public int strawberryFlavor = 0;
+
     // Use this for initialization
     void Start () {
+        
+
         icecream1 = ingredientData.cherryTopping+ingredientData.plainCone+ingredientData.vanillaFlavor+ingredientData.raspberrySauce;
         icecream2 = ingredientData.cherryTopping + ingredientData.plainCone + ingredientData.vanillaFlavor + ingredientData.chocolateSauce;
         icecream3 = ingredientData.cherryTopping + ingredientData.sprinkleCone + ingredientData.vanillaFlavor + ingredientData.chocolateSauce;
@@ -45,5 +58,21 @@ public class icecreamData : MonoBehaviour {
 
        print("icecream1="+icecream1.ToString("f4") +"  icecream2="+ icecream2.ToString("f4") + "  icecream3="+icecream3.ToString("f4")
            +"  icecream4= "+icecream4.ToString("f4")+"  icecream5="+icecream5.ToString("f4"));
+
+        rememberData();
+
+}
+
+    //to remember the data of each ingredient score and reput them on their palces
+    void rememberData()
+    {
+        cherryTopping = ingredientData.cherryTopping;
+        chocolateSauce = ingredientData.chocolateSauce;
+        raspberrySauce = ingredientData.raspberrySauce;
+        waferTopping = ingredientData.waferTopping;
+        plainCone = ingredientData.plainCone;
+        sprinkleCone = ingredientData.sprinkleCone;
+        vanillaFlavor = ingredientData.vanillaFlavor;
+        strawberryFlavor = ingredientData.strawberryFlavor;
     }
 }

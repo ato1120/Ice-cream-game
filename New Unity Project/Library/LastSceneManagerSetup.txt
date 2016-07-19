@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/pic/screens/ice cream.unity
+- path: Assets/pic/screens/Assign the score(fridge).unity
   isLoaded: 1
   isActive: 1

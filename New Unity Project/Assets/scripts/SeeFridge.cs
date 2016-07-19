@@ -4,6 +4,7 @@ using System.Collections;
 public class SeeFridge : MonoBehaviour
 {
     public int open = 0;
+    static public int seefridge = 0;
     private Color mouseOverColor = Color.blue;//声明变量为蓝色   declare the variable value of white
     private Color originalColor;
 
@@ -12,6 +13,7 @@ public class SeeFridge : MonoBehaviour
 
      originalColor = GetComponent<Renderer>().sharedMaterial.color;//开始时得到物体着色 get the original color of the object at the beginning  
 
+        
     }
     void OnMouseEnter()
     {
@@ -28,7 +30,9 @@ public class SeeFridge : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             Application.LoadLevel("Assign the score(fridge)");
-           // Application.LoadLevelAdditive("Assign the score(fridge)");
+            // Application.LoadLevelAdditive("Assign the score(fridge)");
+
+            seefridge = 1;
         }
     }
     // Update is called once per frame
@@ -37,6 +41,7 @@ public class SeeFridge : MonoBehaviour
         if (open == 1)
         {
             SeeFridge1();
+            
 
         }
     }

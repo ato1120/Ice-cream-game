@@ -47,8 +47,9 @@ public class ingredientData : MonoBehaviour {
 
 
 
-    public void Start () {
-       //get the position of each price card
+    public void Start()
+    {
+        //get the position of each price card
         m_obj1 = GameObject.Find("price (1)");
         m_obj2 = GameObject.Find("price (2)");
         m_obj3 = GameObject.Find("price (3)");
@@ -64,7 +65,8 @@ public class ingredientData : MonoBehaviour {
         ing7 = GameObject.Find("ingredient7");
         ing8 = GameObject.Find("ingredient8");
 
-
+        reput();
+       
     }
 
 	// Update is called once per frame
@@ -245,6 +247,142 @@ public class ingredientData : MonoBehaviour {
 
 
 
+    void reput()
+    {
+        if (SeeFridge.seefridge == 1)
+        {
+            if (icecreamData.cherryTopping == 20)                     //cherryTopping
+            {
+                m_obj1.transform.position = ing8.transform.position;
+            }
+            if (icecreamData.cherryTopping == -20)
+            {
+                m_obj2.transform.position = ing8.transform.position;
+            }
+            if (icecreamData.cherryTopping == 10)
+            {
+                m_obj3.transform.position = ing8.transform.position;
+            }
+            if (icecreamData.cherryTopping == -10)
+            {
+                m_obj4.transform.position = ing8.transform.position;
+            }
+            if (icecreamData.chocolateSauce == 20)                     //chocolatesauce
+            {
+                m_obj1.transform.position = ing5.transform.position;
+            }
+            if (icecreamData.chocolateSauce == -20)
+            {
+                m_obj2.transform.position = ing5.transform.position;
+            }
+            if (icecreamData.chocolateSauce == 10)
+            {
+                m_obj3.transform.position = ing5.transform.position;
+            }
+            if (icecreamData.chocolateSauce == -10)
+            {
+                m_obj4.transform.position = ing5.transform.position;
+            }
+            if (icecreamData.plainCone == 20)                       //plaincone
+            {
+                m_obj1.transform.position = ing6.transform.position;
+            }
+            if (icecreamData.plainCone == -20)
+            {
+                m_obj2.transform.position = ing6.transform.position;
+            }
+            if (icecreamData.plainCone == 10)
+            {
+                m_obj3.transform.position = ing6.transform.position;
+            }
+            if (icecreamData.plainCone == -10)
+            {
+                m_obj4.transform.position = ing6.transform.position;
+            }
+            if (icecreamData.sprinkleCone == 20)                        //sprinkle cone
+            {
+                m_obj1.transform.position = ing7.transform.position;
+            }
+            if (icecreamData.sprinkleCone == -20)
+            {
+                m_obj2.transform.position = ing7.transform.position;
+            }
+            if (icecreamData.sprinkleCone == 10)
+            {
+                m_obj3.transform.position = ing7.transform.position;
+            }
+            if (icecreamData.sprinkleCone == -10)
+            {
+                m_obj4.transform.position = ing7.transform.position;
+            }
+            if (icecreamData.raspberrySauce == 20)                      //raspberry
+            {
+                m_obj1.transform.position = ing2.transform.position;
+            }
+            if (icecreamData.raspberrySauce == -20)
+            {
+                m_obj2.transform.position = ing2.transform.position;
+            }
+            if (icecreamData.raspberrySauce == 10)
+            {
+                m_obj3.transform.position = ing2.transform.position;
+            }
+            if (icecreamData.raspberrySauce == -10)
+            {
+                m_obj4.transform.position = ing2.transform.position;
+            }
+            if (icecreamData.vanillaFlavor == 20)                         //vanillaflavor
+            {
+                m_obj1.transform.position = ing3.transform.position;
+            }
+            if (icecreamData.vanillaFlavor == -20)
+            {
+                m_obj2.transform.position = ing3.transform.position;
+            }
+            if (icecreamData.vanillaFlavor == 10)
+            {
+                m_obj3.transform.position = ing3.transform.position;
+            }
+            if (icecreamData.vanillaFlavor == -10)
+            {
+                m_obj4.transform.position = ing3.transform.position;
+            }
+            if (icecreamData.strawberryFlavor == 20)                        //strawberryFlavor
+            {
+                m_obj1.transform.position = ing1.transform.position;
+            }
+            if (icecreamData.strawberryFlavor == -20)
+            {
+                m_obj2.transform.position = ing1.transform.position;
+            }
+            if (icecreamData.strawberryFlavor == 10)
+            {
+                m_obj3.transform.position = ing1.transform.position;
+            }
+            if (icecreamData.strawberryFlavor == -10)
+            {
+                m_obj4.transform.position = ing1.transform.position;
+            }
+            if (icecreamData.waferTopping == 20)               //waferTopping  
+            {
+                m_obj1.transform.position = ing4.transform.position;
+            }
+            if (icecreamData.waferTopping == -20)
+            {
+                m_obj2.transform.position = ing4.transform.position;
+            }
+            if (icecreamData.waferTopping == 10)
+            {
+                m_obj3.transform.position = ing4.transform.position;
+            }
+            if (icecreamData.waferTopping == -10)
+            {
+                m_obj4.transform.position = ing4.transform.position;
+            }
+
+
+        }
+    }
 
 
 }
