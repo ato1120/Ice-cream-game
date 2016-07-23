@@ -58,6 +58,7 @@
      <Compile Include="Assets\scripts\icecreamData.cs" />
      <Compile Include="Assets\scripts\inData.cs" />
      <Compile Include="Assets\scripts\ingredientData.cs" />
+     <Compile Include="Assets\scripts\playerData.cs" />
      <Compile Include="Assets\scripts\showscore.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

@@ -55,7 +55,7 @@ public class ingredientData : MonoBehaviour {
         m_obj3 = GameObject.Find("price (3)");
         m_obj4 = GameObject.Find("price (4)");
 
-        //get the position of each price card
+        //get the position of each ingredient card
         ing1 = GameObject.Find("ingredient1");
         ing2 = GameObject.Find("ingredient2");
         ing3 = GameObject.Find("ingredient3");

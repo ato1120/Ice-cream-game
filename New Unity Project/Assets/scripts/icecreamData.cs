@@ -5,21 +5,21 @@ public class icecreamData : MonoBehaviour {
 
 
     //define the score of each ice cream
-    public int icecream1 = 0;
-    public int icecream2 = 0;
-    public int icecream3 = 0;
-    public int icecream4 = 0;
-    public int icecream5 = 0;
-    public int icecream6 = 0;
-    public int icecream7 = 0;
-    public int icecream8 = 0;
-    public int icecream9 = 0;
-    public int icecream10 = 0;
-    public int icecream11 = 0;
-    public int icecream12 = 0;
-    public int icecream13 = 0;
-    public int icecream14 = 0;
-    public int icecream15 = 0;
+    static public int icecream1 = 0;
+    static public int icecream2 = 0;
+    static public int icecream3 = 0;
+    static public int icecream4 = 0;
+    static public int icecream5 = 0;
+    static public int icecream6 = 0;
+    static public int icecream7 = 0;
+    static public int icecream8 = 0;
+    static public int icecream9 = 0;
+    static public int icecream10 = 0;
+    static public int icecream11 = 0;
+    static public int icecream12 = 0;
+    static public int icecream13 = 0;
+    static public int icecream14 = 0;
+    static public int icecream15 = 0;
 
     //define and intitial the score of each ingredient
     static public int chocolateSauce = 0;
@@ -56,8 +56,8 @@ public class icecreamData : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-       print("icecream1="+icecream1.ToString("f4") +"  icecream2="+ icecream2.ToString("f4") + "  icecream3="+icecream3.ToString("f4")
-           +"  icecream4= "+icecream4.ToString("f4")+"  icecream5="+icecream5.ToString("f4"));
+      // print("icecream1="+icecream1.ToString("f4") +"  icecream2="+ icecream2.ToString("f4") + "  icecream3="+icecream3.ToString("f4")
+      //     +"  icecream4= "+icecream4.ToString("f4")+"  icecream5="+icecream5.ToString("f4"));
 
         rememberData();
 
