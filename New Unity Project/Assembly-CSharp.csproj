@@ -51,6 +51,7 @@
      <Compile Include="Assets\scripts\SeeFridge.cs" />
      <Compile Include="Assets\scripts\Showingredient.cs" />
      <Compile Include="Assets\scripts\Showingredient2.cs" />
+     <Compile Include="Assets\scripts\Showingredient3.cs" />
      <Compile Include="Assets\scripts\flipcard.cs" />
      <Compile Include="Assets\scripts\flipcard1.cs" />
      <Compile Include="Assets\scripts\flipcard2.cs" />
