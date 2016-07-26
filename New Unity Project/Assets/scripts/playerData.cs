@@ -13,11 +13,29 @@ using System.Collections;
  */
 public class playerData : MonoBehaviour {
 
-
+    //define the object of select box(each palyer position)
     GameObject player1;
     GameObject player2;
     GameObject player3;
 
+    //define the object of each ice cream card
+    /*
+     icecream1 = cherryTopping+plainCone+vanillaFlavor+raspberrySauce;
+     icecream2 = cherryTopping + plainCone + vanillaFlavor + chocolateSauce;
+     icecream3 = cherryTopping + sprinkleCone + vanillaFlavor + chocolateSauce;
+     icecream4 = cherryTopping + plainCone + strawberryFlavor + raspberrySauce;
+     icecream5= cherryTopping + plainCone + strawberryFlavor + chocolateSauce;
+     icecream6= cherryTopping +sprinkleCone + strawberryFlavor + chocolateSauce;
+     icecream7= cherryTopping + sprinkleCone + strawberryFlavor + raspberrySauce;
+     icecream8= waferTopping + plainCone + vanillaFlavor + raspberrySauce;
+     icecream9= waferTopping + sprinkleCone + vanillaFlavor + raspberrySauce;
+     icecream10 =waferTopping +plainCone +vanillaFlavor +chocolateSauce;
+     icecream11= waferTopping +sprinkleCone + vanillaFlavor + chocolateSauce;
+     icecream12 = waferTopping + plainCone +strawberryFlavor + chocolateSauce;
+     icecream13= waferTopping +sprinkleCone +strawberryFlavor +chocolateSauce;
+     icecream14 =waferTopping +plainCone +strawberryFlavor +raspberrySauce;
+     icecream15= waferTopping +sprinkleCone + strawberryFlavor +raspberrySauce;
+     */
     GameObject ice1;
     GameObject ice2;
     GameObject ice3;
@@ -33,6 +51,22 @@ public class playerData : MonoBehaviour {
     GameObject ice13;
     GameObject ice14;
     GameObject ice15;
+
+    // the double card of the 15 kinds of card which is named with -of2
+    GameObject ice1of2;
+    GameObject ice2of2;
+    GameObject ice3of2;
+    GameObject ice4of2;
+    GameObject ice5of2;
+    GameObject ice6of2;
+    GameObject ice7of2;
+    GameObject ice8of2;
+    GameObject ice9of2;
+    GameObject ice10of2;
+    GameObject ice11of2;
+    GameObject ice12of2;
+    GameObject ice13of2;
+
 
     //the position of each icecream(0= table, 1=player1,2=player2,3=player3)
     public int icePlace1 = 0;//ice cream1 place
@@ -51,7 +85,22 @@ public class playerData : MonoBehaviour {
     public int icePlace14= 0;
     public int icePlace15 = 0;
 
+    public int icePlace1of2 = 0;
+    public int icePlace2of2 = 0;
+    public int icePlace3of2 = 0;
+    public int icePlace4of2 = 0;
+    public int icePlace5of2 = 0;
+    public int icePlace6of2 = 0;
+    public int icePlace7of2 = 0;
+    public int icePlace8of2 = 0;
+    public int icePlace9of2 = 0;
+    public int icePlace10of2 = 0;
+    public int icePlace11of2 = 0;
+    public int icePlace12of2 = 0;
+    public int icePlace13of2 = 0;
 
+
+    //define the variable of total score of each player
     public int player1totalscore = 0;
     public int player2totalscore = 0;
     public int player3totalscore = 0;
@@ -61,8 +110,7 @@ public class playerData : MonoBehaviour {
     double halfXsize = 11.4;
     double halfYsize = 5.6;
 
-    public int calculateTime = 0;
-
+    // signals to sign where the card is in(table, player1,player2 or player3)
     public int placeChange1 = 0;
     public int placeChange2 = 0;
     public int placeChange3 = 0;
@@ -91,6 +139,20 @@ public class playerData : MonoBehaviour {
         ice14 = GameObject.Find("ice cream14");
         ice15 = GameObject.Find("ice cream15");
 
+        ice1of2 = GameObject.Find("ice cream1-2");
+        ice2of2 = GameObject.Find("ice cream2-2");
+        ice3of2 = GameObject.Find("ice cream3-2");
+        ice4of2 = GameObject.Find("ice cream4-2");
+        ice5of2 = GameObject.Find("ice cream5-2");
+        ice6of2 = GameObject.Find("ice cream6-2");
+        ice7of2 = GameObject.Find("ice cream7-2");
+        ice8of2 = GameObject.Find("ice cream8-2");
+        ice9of2 = GameObject.Find("ice cream9-2");
+        ice10of2 = GameObject.Find("ice cream10-2");
+        ice11of2 = GameObject.Find("ice cream11-2");
+        ice12of2 = GameObject.Find("ice cream12-2");
+        ice13of2 = GameObject.Find("ice cream13-2");
+
     }
 
     // Update is called once per frame
@@ -99,10 +161,10 @@ public class playerData : MonoBehaviour {
         begin();
         totalscore();
         print("player 1 total score=" + player1totalscore.ToString("f4")
-                  + "   player 2 total score=" + player2totalscore.ToString("f4")
-                  + "   player 3 total score=" + player3totalscore.ToString("f4"));
-
-        player1totalscore = 0;//clear the total score every update
+                   + "   player 2 total score=" + player2totalscore.ToString("f4")
+                   + "   player 3 total score=" + player3totalscore.ToString("f4"));
+                   
+        player1totalscore = 0;//clear the total score every update to avoid repeated calculate
         player2totalscore = 0;
         player3totalscore = 0;
 	}
@@ -158,6 +220,46 @@ public class playerData : MonoBehaviour {
         float x15 = ice15_postion.x;
         float y15 = ice15_postion.y;
 
+        Vector3 ice1_postionof2 = ice1of2.transform.position;
+        float x1of2 = ice1_postionof2.x;
+        float y1of2 = ice1_postionof2.y;
+        Vector3 ice2_postionof2 = ice2of2.transform.position;
+        float x2of2 = ice2_postionof2.x;
+        float y2of2 = ice2_postionof2.y;
+        Vector3 ice3_postionof2 = ice3of2.transform.position;
+        float x3of2 = ice3_postionof2.x;
+        float y3of2 = ice3_postionof2.y;
+        Vector3 ice4_postionof2 = ice4of2.transform.position;
+        float x4of2 = ice4_postionof2.x;
+        float y4of2 = ice4_postionof2.y;
+        Vector3 ice5_postionof2 = ice5of2.transform.position;
+        float x5of2 = ice5_postionof2.x;
+        float y5of2 = ice5_postionof2.y;
+        Vector3 ice6_postionof2 = ice6of2.transform.position;
+        float x6of2 = ice6_postionof2.x;
+        float y6of2 = ice6_postionof2.y;
+        Vector3 ice7_postionof2 = ice7of2.transform.position;
+        float x7of2 = ice7_postionof2.x;
+        float y7of2 = ice7_postionof2.y;
+        Vector3 ice8_postionof2 = ice8of2.transform.position;
+        float x8of2 = ice8_postionof2.x;
+        float y8of2 = ice8_postion.y;
+        Vector3 ice9_postionof2 = ice9of2.transform.position;
+        float x9of2 = ice9_postionof2.x;
+        float y9of2 = ice9_postionof2.y;
+        Vector3 ice10_postionof2 = ice10of2.transform.position;
+        float x10of2 = ice10_postionof2.x;
+        float y10of2 = ice10_postionof2.y;
+        Vector3 ice11_postionof2 = ice11of2.transform.position;
+        float x11of2 = ice11_postionof2.x;
+        float y11of2 = ice11_postionof2.y;
+        Vector3 ice12_postionof2 = ice12of2.transform.position;
+        float x12of2 = ice12_postionof2.x;
+        float y12of2 = ice12_postionof2.y;
+        Vector3 ice13_postionof2 = ice13of2.transform.position;
+        float x13of2 = ice13_postionof2.x;
+        float y13of2 = ice13_postionof2.y;
+
         position(x1, y1,1);
         position(x2, y2,2);
         position(x3, y3,3);
@@ -174,6 +276,22 @@ public class playerData : MonoBehaviour {
         position(x14, y14, 14);
         position(x15, y15, 15);
 
+        position(x1of2, y1of2, 16);
+        position(x2of2, y2of2, 17);
+        position(x3of2, y3of2, 18);
+        position(x4of2, y4of2, 19);
+        position(x5of2, y5of2, 20);
+        position(x6of2, y6of2, 21);
+        position(x7of2, y7of2, 22);
+        position(x8of2, y8of2, 23);
+        position(x9of2, y9of2, 24);
+        position(x10of2, y10of2, 25);
+        position(x11of2, y11of2, 26);
+        position(x12of2, y12of2, 27);
+        position(x13of2, y13of2, 28);
+
+
+
 
     }
     void position(float x, float y,int iceNum)
@@ -189,7 +307,7 @@ public class playerData : MonoBehaviour {
         int place = 0;// remember which place the card stay in (0=table,1=player1.......)
 
         //get the position of ice cream card
-        if (x > x1 - halfXsize && x < x1 + halfXsize)            //1
+        if (x > x1 - halfXsize && x < x1 + halfXsize)            //of player1
         {
             if (y > y1 - halfYsize && y < y1 + halfYsize)
             {
@@ -197,7 +315,7 @@ public class playerData : MonoBehaviour {
              
             }
         }
-        if (x > x2 - halfXsize && x < x2 + halfXsize)             //2
+        if (x > x2 - halfXsize && x < x2 + halfXsize)             //of player2
         {
             if (y > y2 - halfYsize && y < y2 + halfYsize)
             {
@@ -205,7 +323,7 @@ public class playerData : MonoBehaviour {
 
             }
         }
-        if (x > x3 - halfXsize && x < x3 + halfXsize)          //3
+        if (x > x3 - halfXsize && x < x3 + halfXsize)          //of player3
         {
             if (y > y3 - halfYsize && y < y3 + halfYsize)
             {
@@ -294,6 +412,61 @@ public class playerData : MonoBehaviour {
         {
             icePlace15 = place;
         }
+
+
+        if (iceNum == 16)
+        {
+            icePlace1of2 = place;
+        }
+        if (iceNum == 17)
+        {
+            icePlace2of2 = place;
+        }
+        if (iceNum == 18)
+        {
+            icePlace3of2 = place;
+        }
+        if (iceNum == 19)
+        {
+            icePlace4of2 = place;
+        }
+        if (iceNum == 20)
+        {
+            icePlace5of2 = place;
+        }
+        if (iceNum == 21)
+        {
+            icePlace6of2 = place;
+        }
+        if (iceNum == 22)
+        {
+            icePlace7of2 = place;
+        }
+        if (iceNum == 23)
+        {
+            icePlace8of2 = place;
+        }
+        if (iceNum == 24)
+        {
+            icePlace9of2 = place;
+        }
+        if (iceNum == 25)
+        {
+            icePlace10of2 = place;
+        }
+        if (iceNum == 26)
+        {
+            icePlace11of2 = place;
+        }
+        if (iceNum == 27)
+        {
+            icePlace12of2 = place;
+        }
+        if (iceNum == 28)
+        {
+            icePlace13of2 = place;
+        }
+
 
     }
 
@@ -491,5 +664,175 @@ public class playerData : MonoBehaviour {
         {
             player3totalscore = player3totalscore + icecreamData.icecream15;
         }
+
+
+
+        if (icePlace1of2 == 1)
+        {
+            player1totalscore = player1totalscore + icecreamData.icecream1;
+
+        }
+        if (icePlace1of2 == 2)
+        {
+            player2totalscore = player2totalscore + icecreamData.icecream1;
+
+
+        }
+        if (icePlace1of2 == 3)
+        {
+            player3totalscore = player3totalscore + icecreamData.icecream1;
+
+        }
+
+        if (icePlace2of2 == 1)
+        {
+            player1totalscore = player1totalscore + icecreamData.icecream2;
+        }
+        if (icePlace2of2 == 2)
+        {
+            player2totalscore = player2totalscore + icecreamData.icecream2;
+        }
+        if (icePlace2of2 == 3)
+        {
+            player3totalscore = player3totalscore + icecreamData.icecream2;
+        }
+        if (icePlace3of2 == 1)
+        {
+            player1totalscore = player1totalscore + icecreamData.icecream3;
+        }
+        if (icePlace3of2 == 2)
+        {
+            player2totalscore = player2totalscore + icecreamData.icecream3;
+        }
+        if (icePlace3of2 == 3)
+        {
+            player3totalscore = player3totalscore + icecreamData.icecream3;
+        }
+        if (icePlace4of2 == 1)
+        {
+            player1totalscore = player1totalscore + icecreamData.icecream4;
+        }
+        if (icePlace4of2 == 2)
+        {
+            player2totalscore = player2totalscore + icecreamData.icecream4;
+        }
+        if (icePlace4of2 == 3)
+        {
+            player3totalscore = player3totalscore + icecreamData.icecream4;
+        }
+        if (icePlace5of2 == 1)
+        {
+            player1totalscore = player1totalscore + icecreamData.icecream5;
+        }
+        if (icePlace5of2 == 2)
+        {
+            player2totalscore = player2totalscore + icecreamData.icecream5;
+        }
+        if (icePlace5of2 == 3)
+        {
+            player3totalscore = player3totalscore + icecreamData.icecream5;
+        }
+
+        if (icePlace6of2 == 1)
+        {
+            player1totalscore = player1totalscore + icecreamData.icecream6;
+        }
+        if (icePlace6of2 == 2)
+        {
+            player2totalscore = player2totalscore + icecreamData.icecream6;
+        }
+        if (icePlace6of2 == 3)
+        {
+            player3totalscore = player3totalscore + icecreamData.icecream6;
+        }
+
+        if (icePlace7of2 == 1)
+        {
+            player1totalscore = player1totalscore + icecreamData.icecream7;
+        }
+        if (icePlace7of2 == 2)
+        {
+            player2totalscore = player2totalscore + icecreamData.icecream7;
+        }
+        if (icePlace7of2 == 3)
+        {
+            player3totalscore = player3totalscore + icecreamData.icecream7;
+        }
+
+        if (icePlace8of2 == 1)
+        {
+            player1totalscore = player1totalscore + icecreamData.icecream8;
+        }
+        if (icePlace8of2 == 2)
+        {
+            player2totalscore = player2totalscore + icecreamData.icecream8;
+        }
+        if (icePlace8of2 == 3)
+        {
+            player3totalscore = player3totalscore + icecreamData.icecream8;
+        }
+
+        if (icePlace9of2 == 1)
+        {
+            player1totalscore = player1totalscore + icecreamData.icecream9;
+        }
+        if (icePlace9of2 == 2)
+        {
+            player2totalscore = player2totalscore + icecreamData.icecream9;
+        }
+        if (icePlace9of2 == 3)
+        {
+            player3totalscore = player3totalscore + icecreamData.icecream9;
+        }
+
+        if (icePlace10of2 == 1)
+        {
+            player1totalscore = player1totalscore + icecreamData.icecream10;
+        }
+        if (icePlace10of2 == 2)
+        {
+            player2totalscore = player2totalscore + icecreamData.icecream10;
+        }
+        if (icePlace10of2 == 3)
+        {
+            player3totalscore = player3totalscore + icecreamData.icecream10;
+        }
+        if (icePlace11of2 == 1)
+        {
+            player1totalscore = player1totalscore + icecreamData.icecream11;
+        }
+        if (icePlace11of2 == 2)
+        {
+            player2totalscore = player2totalscore + icecreamData.icecream11;
+        }
+        if (icePlace11of2 == 3)
+        {
+            player3totalscore = player3totalscore + icecreamData.icecream11;
+        }
+        if (icePlace12of2 == 1)
+        {
+            player1totalscore = player1totalscore + icecreamData.icecream12;
+        }
+        if (icePlace12of2 == 2)
+        {
+            player2totalscore = player2totalscore + icecreamData.icecream12;
+        }
+        if (icePlace12of2 == 3)
+        {
+            player3totalscore = player3totalscore + icecreamData.icecream12;
+        }
+        if (icePlace13of2 == 1)
+        {
+            player1totalscore = player1totalscore + icecreamData.icecream13;
+        }
+        if (icePlace13of2 == 2)
+        {
+            player2totalscore = player2totalscore + icecreamData.icecream13;
+        }
+        if (icePlace13of2 == 3)
+        {
+            player3totalscore = player3totalscore + icecreamData.icecream13;
+        }
+
     }
 }

@@ -3,24 +3,24 @@ using System.Collections;
 
 public class ingredientData : MonoBehaviour {
     //define the object of each price card
-    GameObject m_obj1;
-    GameObject m_obj2;
-    GameObject m_obj3;
-    GameObject m_obj4;
+    GameObject m_obj1;   //+20
+    GameObject m_obj2;   //-20
+    GameObject m_obj3;   //+10
+    GameObject m_obj4;   //-10
 
     //define the object of each ingredient card
-    GameObject ing1;
-    GameObject ing2;
-    GameObject ing3;
-    GameObject ing4;
-    GameObject ing5;
-    GameObject ing6;
-    GameObject ing7;
-    GameObject ing8;
+    GameObject ing1;      //strawberryFlavor
+    GameObject ing2;      //raspberrySauce
+    GameObject ing3;      //vanillaFlavor
+    GameObject ing4;      //waferTopping
+    GameObject ing5;      //chocolateSauce
+    GameObject ing6;      //plainCone
+    GameObject ing7;      //sprinkleCone
+    GameObject ing8;      //cherryTopping
 
 
     //define and intitial the score of each ingredient
-   static public int chocolateSauce = 0;    
+    static public int chocolateSauce = 0;    
    static public int raspberrySauce = 0;
     static public int waferTopping = 0;
     static public int cherryTopping = 0;
@@ -131,7 +131,7 @@ public class ingredientData : MonoBehaviour {
         float x8 = ing8.transform.position.x;
         float y8 = ing8.transform.position.y;
         //Give the score to an ingredient 
-        if (x > x1-halfXsize && x < x1+halfXsize)            //1
+        if (x > x1-halfXsize && x < x1+halfXsize)            //if the score card is on the strawberryFlavor card?
         {
             if (y > y1-halfYsize && y < y1+halfYsize)
             {
@@ -139,7 +139,7 @@ public class ingredientData : MonoBehaviour {
                 strScoreChange = 1;
             }
         }
-        if (x > x2 - halfXsize && x < x2 + halfXsize)             //2
+        if (x > x2 - halfXsize && x < x2 + halfXsize)             //if the score card is on the raspberrySauce card?
         {
             if (y > y2 - halfYsize && y < y2 + halfYsize)
             {
@@ -147,7 +147,7 @@ public class ingredientData : MonoBehaviour {
                 rasScoreChange = 1;
             }
         }
-        if (x > x3 - halfXsize && x < x3 + halfXsize)          //3
+        if (x > x3 - halfXsize && x < x3 + halfXsize)          //if the score card is on the  vanillaFlavor card?
         {
             if (y > y3 - halfYsize && y < y3 + halfYsize)
             {
@@ -155,7 +155,7 @@ public class ingredientData : MonoBehaviour {
                 vanScoreChange = 1;
             }
         }
-        if (x > x4 - halfXsize && x < x4 + halfXsize)         //4
+        if (x > x4 - halfXsize && x < x4 + halfXsize)         //if the score card is on the waferTopping card?
         {
             if (y > y4 - halfYsize && y < y4 + halfYsize)
             {
@@ -163,7 +163,7 @@ public class ingredientData : MonoBehaviour {
                 wafScoreChange = 1;
             }
         }
-        if (x > x5 - halfXsize && x < x5 + halfXsize)           //5
+        if (x > x5 - halfXsize && x < x5 + halfXsize)           //if the score card is on the chocolateSauce card?
         {
             if (y > y5 - halfYsize && y < y5 + halfYsize)
             {
@@ -171,7 +171,7 @@ public class ingredientData : MonoBehaviour {
                 choScoreChange = 1;
             }
         }
-        if (x > x6 - halfXsize && x < x6 + halfXsize)            //6
+        if (x > x6 - halfXsize && x < x6 + halfXsize)            //if the score card is on the plainCone card?
         {
             if (y > y6 - halfYsize && y < y6 + halfYsize)
             {
@@ -179,7 +179,7 @@ public class ingredientData : MonoBehaviour {
                 plaScoreChange = 1;
             }
         }
-        if (x > x7 - halfXsize && x < x7 + halfXsize)            //7
+        if (x > x7 - halfXsize && x < x7 + halfXsize)            //if the score card is on the sprinkleCone card?
         {
             if (y > y7 - halfYsize && y < y7 + halfYsize)
             {
@@ -187,7 +187,7 @@ public class ingredientData : MonoBehaviour {
                 sprScoreChange = 1;
             }
         }
-        if (x > x8 - halfXsize && x < x8 + halfXsize)            //8
+        if (x > x8 - halfXsize && x < x8 + halfXsize)            //if the score card is on the cherryTopping card?
         {
             if (y > y8 - halfYsize && y < y8 + halfYsize)
             {
@@ -246,7 +246,8 @@ public class ingredientData : MonoBehaviour {
     }
 
 
-
+    // if the screen comes from the link of Seefridge, then we will remember the former data of the score of the ingredient
+    // We use data from the icecreamData scripts
     void reput()
     {
         if (SeeFridge.seefridge == 1)

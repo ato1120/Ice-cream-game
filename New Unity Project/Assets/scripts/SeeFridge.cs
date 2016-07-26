@@ -3,15 +3,16 @@ using System.Collections;
 
 public class SeeFridge : MonoBehaviour
 {
-    public int open = 0;
-    static public int seefridge = 0;
-    private Color mouseOverColor = Color.blue;//声明变量为蓝色   declare the variable value of white
+    public int open = 0;    // this variable judge whether the mouse is on the top of the icon of SeeFridge
+    static public int seefridge = 0;  /*a signal to know if we go to the Assign the score screen from the ice cream screen and so that we could reput to score 
+                                       on the ingredient. if not, we just have the new define.*/
+    private Color mouseOverColor = Color.blue;//  declare the variable value of white
     private Color originalColor;
 
     // Use this for initialization
     void Start()    {
 
-     originalColor = GetComponent<Renderer>().sharedMaterial.color;//开始时得到物体着色 get the original color of the object at the beginning  
+     originalColor = GetComponent<Renderer>().sharedMaterial.color;//get the original color of the object at the beginning  
 
         
     }
@@ -25,12 +26,12 @@ public class SeeFridge : MonoBehaviour
         open = 0;
         GetComponent<Renderer>().material.color = originalColor;
     }
-    void SeeFridge1()
+    void SeeFridge1()   // implement the link from ice cream screen to Assign the score screen
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0))    // if the mouse is clicked?
         {
-            Application.LoadLevel("Assign the score(fridge)");
-            // Application.LoadLevelAdditive("Assign the score(fridge)");
+            Application.LoadLevel("Assign the score(fridge)");    //Jump now!
+            
 
             seefridge = 1;
         }
