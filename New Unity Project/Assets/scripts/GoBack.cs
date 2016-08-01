@@ -7,6 +7,9 @@ public class GoBack : MonoBehaviour {
     private Color mouseOverColor = Color.blue;//   declare the variable value of white
     private Color originalColor;
 
+    static public int goBack=0;
+
+
     // Use this for initialization
     void Start()
     {
@@ -30,6 +33,7 @@ public class GoBack : MonoBehaviour {
         {
             Application.LoadLevel("ice cream");
             //Application.LoadLevelAdditive("ice cream");
+            goBack = 1;
         }
     }
     // Update is called once per frame

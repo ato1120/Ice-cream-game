@@ -14,7 +14,7 @@ public class SeeFridge : MonoBehaviour
 
      originalColor = GetComponent<Renderer>().sharedMaterial.color;//get the original color of the object at the beginning  
 
-        
+    
     }
     void OnMouseEnter()
     {

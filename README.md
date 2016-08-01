@@ -29,4 +29,9 @@ This script use the data of ¡°ingredientData.cs¡±. We add all of the score of th
 8. playerData.cs
 In this script, we save data of which ice cream each player have, what is the total score of each player and what is the score of each ice cream. The last one comes from the ¡°icecreamData.cs¡±.
 
+9. Remember.cs
+We remember the data of which ice cream each player has and reput it to the place of selected box.
+
+10. Showscore.cs
+In this script, there is an icon in the screen of the fridge. By click it, you can decide whether to show the score of selected ice cream to the players.
 

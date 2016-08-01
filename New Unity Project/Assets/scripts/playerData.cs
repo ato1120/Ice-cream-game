@@ -69,35 +69,35 @@ public class playerData : MonoBehaviour {
 
 
     //the position of each icecream(0= table, 1=player1,2=player2,3=player3)
-    public int icePlace1 = 0;//ice cream1 place
-    public int icePlace2 = 0;
-    public int icePlace3 = 0;
-    public int icePlace4 = 0;
-    public int icePlace5 = 0;
-    public int icePlace6 = 0;
-    public int icePlace7 = 0;
-    public int icePlace8 = 0;
-    public int icePlace9 = 0;
-    public int icePlace10 = 0;
-    public int icePlace11 = 0;
-    public int icePlace12 = 0;
-    public int icePlace13 = 0;
-    public int icePlace14= 0;
-    public int icePlace15 = 0;
+    static public int icePlace1 = 0;//ice cream1 place
+    static public int icePlace2 = 0;
+    static public int icePlace3 = 0;
+    static public int icePlace4 = 0;
+    static public int icePlace5 = 0;
+    static public int icePlace6 = 0;
+    static public int icePlace7 = 0;
+    static public int icePlace8 = 0;
+    static public int icePlace9 = 0;
+    static public int icePlace10 = 0;
+    static public int icePlace11 = 0;
+    static public int icePlace12 = 0;
+    static public int icePlace13 = 0;
+    static public int icePlace14= 0;
+    static public int icePlace15 = 0;
 
-    public int icePlace1of2 = 0;
-    public int icePlace2of2 = 0;
-    public int icePlace3of2 = 0;
-    public int icePlace4of2 = 0;
-    public int icePlace5of2 = 0;
-    public int icePlace6of2 = 0;
-    public int icePlace7of2 = 0;
-    public int icePlace8of2 = 0;
-    public int icePlace9of2 = 0;
-    public int icePlace10of2 = 0;
-    public int icePlace11of2 = 0;
-    public int icePlace12of2 = 0;
-    public int icePlace13of2 = 0;
+    static public int icePlace1of2 = 0;
+    static public int icePlace2of2 = 0;
+    static public int icePlace3of2 = 0;
+    static public int icePlace4of2 = 0;
+    static public int icePlace5of2 = 0;
+    static public int icePlace6of2 = 0;
+    static public int icePlace7of2 = 0;
+    static public int icePlace8of2 = 0;
+    static public int icePlace9of2 = 0;
+    static public int icePlace10of2 = 0;
+    static public int icePlace11of2 = 0;
+    static public int icePlace12of2 = 0;
+    static public int icePlace13of2 = 0;
 
 
     //define the variable of total score of each player
@@ -329,9 +329,10 @@ public class playerData : MonoBehaviour {
             {
                 placeChange3 = 1;
             }
-        }
+        } 
 
        // give the value to "place",with the signal of place change
+
         if (placeChange1 ==1)
         {
             place = 1;
@@ -352,6 +353,8 @@ public class playerData : MonoBehaviour {
 
 
         //give the situation information to the ice cream Data
+
+        
         if (iceNum == 1)
         {
             icePlace1 = place;
