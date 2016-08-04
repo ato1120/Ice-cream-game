@@ -22,7 +22,7 @@ public class icecreamData : MonoBehaviour {
        icecream14 =waferTopping +plainCone +strawberryFlavor +raspberrySauce;
        icecream15= waferTopping +sprinkleCone + strawberryFlavor +raspberrySauce;
        */
-    static public int icecream1 = 0;
+    static public int icecream1 = 0; //The score of each ice cream
     static public int icecream2 = 0;
     static public int icecream3 = 0;
     static public int icecream4 = 0;

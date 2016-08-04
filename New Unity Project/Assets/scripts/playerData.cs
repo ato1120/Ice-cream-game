@@ -160,6 +160,7 @@ public class playerData : MonoBehaviour {
 
         begin();
         totalscore();
+        // you can don't show the following codes when the game is really played
         print("player 1 total score=" + player1totalscore.ToString("f4")
                    + "   player 2 total score=" + player2totalscore.ToString("f4")
                    + "   player 3 total score=" + player3totalscore.ToString("f4"));
@@ -479,362 +480,362 @@ public class playerData : MonoBehaviour {
 
             if (icePlace1 == 1)
             {
-                player1totalscore = player1totalscore + icecreamData.icecream1;
+                player1totalscore +=icecreamData.icecream1;
              
             }
             if (icePlace1 == 2)
             {
-                player2totalscore = player2totalscore + icecreamData.icecream1;
+                player2totalscore +=icecreamData.icecream1;
       
             
             }
             if (icePlace1 == 3)
             {
-                player3totalscore = player3totalscore + icecreamData.icecream1;
+                player3totalscore +=icecreamData.icecream1;
             
             }
         
         if (icePlace2 == 1)
         {
-            player1totalscore = player1totalscore + icecreamData.icecream2;
+            player1totalscore +=icecreamData.icecream2;
         }
         if (icePlace2 == 2)
         {
-            player2totalscore = player2totalscore + icecreamData.icecream2;
+            player2totalscore +=icecreamData.icecream2;
         }
         if (icePlace2 == 3)
         {
-            player3totalscore = player3totalscore + icecreamData.icecream2;
+            player3totalscore +=icecreamData.icecream2;
         }
         if (icePlace3 == 1)
         {
-            player1totalscore = player1totalscore + icecreamData.icecream3;
+            player1totalscore += icecreamData.icecream3;
         }
         if (icePlace3 == 2)
         {
-            player2totalscore = player2totalscore + icecreamData.icecream3;
+            player2totalscore += icecreamData.icecream3;
         }
         if (icePlace3 == 3)
         {
-            player3totalscore = player3totalscore + icecreamData.icecream3;
+            player3totalscore +=icecreamData.icecream3;
         }
         if (icePlace4 == 1)
         {
-            player1totalscore = player1totalscore + icecreamData.icecream4;
+            player1totalscore +=icecreamData.icecream4;
         }
         if (icePlace4 == 2)
         {
-            player2totalscore = player2totalscore + icecreamData.icecream4;
+            player2totalscore +=icecreamData.icecream4;
         }
         if (icePlace4 == 3)
         {
-            player3totalscore = player3totalscore + icecreamData.icecream4;
+            player3totalscore +=  icecreamData.icecream4;
         }
         if (icePlace5 == 1)
         {
-            player1totalscore = player1totalscore + icecreamData.icecream5;
+            player1totalscore += icecreamData.icecream5;
         }
         if (icePlace5 == 2)
         {
-            player2totalscore = player2totalscore + icecreamData.icecream5;
+            player2totalscore +=icecreamData.icecream5;
         }
         if (icePlace5 == 3)
         {
-            player3totalscore = player3totalscore + icecreamData.icecream5;
+            player3totalscore +=  icecreamData.icecream5;
         }
 
         if (icePlace6 == 1)
         {
-            player1totalscore = player1totalscore + icecreamData.icecream6;
+            player1totalscore +=icecreamData.icecream6;
         }
         if (icePlace6 == 2)
         {
-            player2totalscore = player2totalscore + icecreamData.icecream6;
+            player2totalscore +=icecreamData.icecream6;
         }
         if (icePlace6 == 3)
         {
-            player3totalscore = player3totalscore + icecreamData.icecream6;
+            player3totalscore +=icecreamData.icecream6;
         }
 
         if (icePlace7 == 1)
         {
-            player1totalscore = player1totalscore + icecreamData.icecream7;
+            player1totalscore +=icecreamData.icecream7;
         }
         if (icePlace7 == 2)
         {
-            player2totalscore = player2totalscore + icecreamData.icecream7;
+            player2totalscore +=icecreamData.icecream7;
         }
         if (icePlace7 == 3)
         {
-            player3totalscore = player3totalscore + icecreamData.icecream7;
+            player3totalscore +=  icecreamData.icecream7;
         }
 
         if (icePlace8 == 1)
         {
-            player1totalscore = player1totalscore + icecreamData.icecream8;
+            player1totalscore += icecreamData.icecream8;
         }
         if (icePlace8 == 2)
         {
-            player2totalscore = player2totalscore + icecreamData.icecream8;
+            player2totalscore +=  icecreamData.icecream8;
         }
         if (icePlace8 == 3)
         {
-            player3totalscore = player3totalscore + icecreamData.icecream8;
+            player3totalscore += icecreamData.icecream8;
         }
 
         if (icePlace9 == 1)
         {
-            player1totalscore = player1totalscore + icecreamData.icecream9;
+            player1totalscore += icecreamData.icecream9;
         }
         if (icePlace9 == 2)
         {
-            player2totalscore = player2totalscore + icecreamData.icecream9;
+            player2totalscore += icecreamData.icecream9;
         }
         if (icePlace9 == 3)
         {
-            player3totalscore = player3totalscore + icecreamData.icecream9;
+            player3totalscore +=  icecreamData.icecream9;
         }
 
         if (icePlace10 == 1)
         {
-            player1totalscore = player1totalscore + icecreamData.icecream10;
+            player1totalscore += icecreamData.icecream10;
         }
         if (icePlace10 == 2)
         {
-            player2totalscore = player2totalscore + icecreamData.icecream10;
+            player2totalscore +=icecreamData.icecream10;
         }
         if (icePlace10 == 3)
         {
-            player3totalscore = player3totalscore + icecreamData.icecream10;
+            player3totalscore +=icecreamData.icecream10;
         }
         if (icePlace11 == 1)
         {
-            player1totalscore = player1totalscore + icecreamData.icecream11;
+            player1totalscore +=icecreamData.icecream11;
         }
         if (icePlace11 == 2)
         {
-            player2totalscore = player2totalscore + icecreamData.icecream11;
+            player2totalscore += icecreamData.icecream11;
         }
         if (icePlace11 == 3)
         {
-            player3totalscore = player3totalscore + icecreamData.icecream11;
+            player3totalscore += icecreamData.icecream11;
         }
         if (icePlace12 == 1)
         {
-            player1totalscore = player1totalscore + icecreamData.icecream12;
+            player1totalscore += icecreamData.icecream12;
         }
         if (icePlace12 == 2)
         {
-            player2totalscore = player2totalscore + icecreamData.icecream12;
+            player2totalscore += icecreamData.icecream12;
         }
         if (icePlace12 == 3)
         {
-            player3totalscore = player3totalscore + icecreamData.icecream12;
+            player3totalscore += icecreamData.icecream12;
         }
         if (icePlace13 == 1)
         {
-            player1totalscore = player1totalscore + icecreamData.icecream13;
+            player1totalscore += icecreamData.icecream13;
         }
         if (icePlace13 == 2)
         {
-            player2totalscore = player2totalscore + icecreamData.icecream13;
+            player2totalscore += icecreamData.icecream13;
         }
         if (icePlace13 == 3)
         {
-            player3totalscore = player3totalscore + icecreamData.icecream13;
+            player3totalscore +=icecreamData.icecream13;
         }
         if (icePlace14 == 1)
         {
-            player1totalscore = player1totalscore + icecreamData.icecream14;
+            player1totalscore += icecreamData.icecream14;
         }
         if (icePlace14 == 2)
         {
-            player2totalscore = player2totalscore + icecreamData.icecream14;
+            player2totalscore +=icecreamData.icecream14;
         }
         if (icePlace14 == 3)
         {
-            player3totalscore = player3totalscore + icecreamData.icecream14;
+            player3totalscore += icecreamData.icecream14;
         }
         if (icePlace15 == 1)
         {
-            player1totalscore = player1totalscore + icecreamData.icecream15;
+            player1totalscore += icecreamData.icecream15;
         }
         if (icePlace15 == 2)
         {
-            player2totalscore = player2totalscore + icecreamData.icecream15;
+            player2totalscore +=icecreamData.icecream15;
         }
         if (icePlace15 == 3)
         {
-            player3totalscore = player3totalscore + icecreamData.icecream15;
+            player3totalscore += icecreamData.icecream15;
         }
 
 
 
         if (icePlace1of2 == 1)
         {
-            player1totalscore = player1totalscore + icecreamData.icecream1;
+            player1totalscore += icecreamData.icecream1;
 
         }
         if (icePlace1of2 == 2)
         {
-            player2totalscore = player2totalscore + icecreamData.icecream1;
+            player2totalscore +=icecreamData.icecream1;
 
 
         }
         if (icePlace1of2 == 3)
         {
-            player3totalscore = player3totalscore + icecreamData.icecream1;
+            player3totalscore +=  icecreamData.icecream1;
 
         }
 
         if (icePlace2of2 == 1)
         {
-            player1totalscore = player1totalscore + icecreamData.icecream2;
+            player1totalscore += icecreamData.icecream2;
         }
         if (icePlace2of2 == 2)
         {
-            player2totalscore = player2totalscore + icecreamData.icecream2;
+            player2totalscore += icecreamData.icecream2;
         }
         if (icePlace2of2 == 3)
         {
-            player3totalscore = player3totalscore + icecreamData.icecream2;
+            player3totalscore +=  icecreamData.icecream2;
         }
         if (icePlace3of2 == 1)
         {
-            player1totalscore = player1totalscore + icecreamData.icecream3;
+            player1totalscore +=  icecreamData.icecream3;
         }
         if (icePlace3of2 == 2)
         {
-            player2totalscore = player2totalscore + icecreamData.icecream3;
+            player2totalscore += icecreamData.icecream3;
         }
         if (icePlace3of2 == 3)
         {
-            player3totalscore = player3totalscore + icecreamData.icecream3;
+            player3totalscore +=  icecreamData.icecream3;
         }
         if (icePlace4of2 == 1)
         {
-            player1totalscore = player1totalscore + icecreamData.icecream4;
+            player1totalscore += icecreamData.icecream4;
         }
         if (icePlace4of2 == 2)
         {
-            player2totalscore = player2totalscore + icecreamData.icecream4;
+            player2totalscore +=  icecreamData.icecream4;
         }
         if (icePlace4of2 == 3)
         {
-            player3totalscore = player3totalscore + icecreamData.icecream4;
+            player3totalscore +=  icecreamData.icecream4;
         }
         if (icePlace5of2 == 1)
         {
-            player1totalscore = player1totalscore + icecreamData.icecream5;
+            player1totalscore +=  icecreamData.icecream5;
         }
         if (icePlace5of2 == 2)
         {
-            player2totalscore = player2totalscore + icecreamData.icecream5;
+            player2totalscore +=  icecreamData.icecream5;
         }
         if (icePlace5of2 == 3)
         {
-            player3totalscore = player3totalscore + icecreamData.icecream5;
+            player3totalscore += icecreamData.icecream5;
         }
 
         if (icePlace6of2 == 1)
         {
-            player1totalscore = player1totalscore + icecreamData.icecream6;
+            player1totalscore += icecreamData.icecream6;
         }
         if (icePlace6of2 == 2)
         {
-            player2totalscore = player2totalscore + icecreamData.icecream6;
+            player2totalscore +=  icecreamData.icecream6;
         }
         if (icePlace6of2 == 3)
         {
-            player3totalscore = player3totalscore + icecreamData.icecream6;
+            player3totalscore +=icecreamData.icecream6;
         }
 
         if (icePlace7of2 == 1)
         {
-            player1totalscore = player1totalscore + icecreamData.icecream7;
+            player1totalscore +=  icecreamData.icecream7;
         }
         if (icePlace7of2 == 2)
         {
-            player2totalscore = player2totalscore + icecreamData.icecream7;
+            player2totalscore += icecreamData.icecream7;
         }
         if (icePlace7of2 == 3)
         {
-            player3totalscore = player3totalscore + icecreamData.icecream7;
+            player3totalscore +=  icecreamData.icecream7;
         }
 
         if (icePlace8of2 == 1)
         {
-            player1totalscore = player1totalscore + icecreamData.icecream8;
+            player1totalscore += icecreamData.icecream8;
         }
         if (icePlace8of2 == 2)
         {
-            player2totalscore = player2totalscore + icecreamData.icecream8;
+            player2totalscore +=  icecreamData.icecream8;
         }
         if (icePlace8of2 == 3)
         {
-            player3totalscore = player3totalscore + icecreamData.icecream8;
+            player3totalscore +=icecreamData.icecream8;
         }
 
         if (icePlace9of2 == 1)
         {
-            player1totalscore = player1totalscore + icecreamData.icecream9;
+            player1totalscore += icecreamData.icecream9;
         }
         if (icePlace9of2 == 2)
         {
-            player2totalscore = player2totalscore + icecreamData.icecream9;
+            player2totalscore +=  icecreamData.icecream9;
         }
         if (icePlace9of2 == 3)
         {
-            player3totalscore = player3totalscore + icecreamData.icecream9;
+            player3totalscore +=  icecreamData.icecream9;
         }
 
         if (icePlace10of2 == 1)
         {
-            player1totalscore = player1totalscore + icecreamData.icecream10;
+            player1totalscore += icecreamData.icecream10;
         }
         if (icePlace10of2 == 2)
         {
-            player2totalscore = player2totalscore + icecreamData.icecream10;
+            player2totalscore +=  icecreamData.icecream10;
         }
         if (icePlace10of2 == 3)
         {
-            player3totalscore = player3totalscore + icecreamData.icecream10;
+            player3totalscore +=  icecreamData.icecream10;
         }
         if (icePlace11of2 == 1)
         {
-            player1totalscore = player1totalscore + icecreamData.icecream11;
+            player1totalscore += icecreamData.icecream11;
         }
         if (icePlace11of2 == 2)
         {
-            player2totalscore = player2totalscore + icecreamData.icecream11;
+            player2totalscore +=  icecreamData.icecream11;
         }
         if (icePlace11of2 == 3)
         {
-            player3totalscore = player3totalscore + icecreamData.icecream11;
+            player3totalscore +=  icecreamData.icecream11;
         }
         if (icePlace12of2 == 1)
         {
-            player1totalscore = player1totalscore + icecreamData.icecream12;
+            player1totalscore +=  icecreamData.icecream12;
         }
         if (icePlace12of2 == 2)
         {
-            player2totalscore = player2totalscore + icecreamData.icecream12;
+            player2totalscore += icecreamData.icecream12;
         }
         if (icePlace12of2 == 3)
         {
-            player3totalscore = player3totalscore + icecreamData.icecream12;
+            player3totalscore += icecreamData.icecream12;
         }
         if (icePlace13of2 == 1)
         {
-            player1totalscore = player1totalscore + icecreamData.icecream13;
+            player1totalscore +=  icecreamData.icecream13;
         }
         if (icePlace13of2 == 2)
         {
-            player2totalscore = player2totalscore + icecreamData.icecream13;
+            player2totalscore += icecreamData.icecream13;
         }
         if (icePlace13of2 == 3)
         {
-            player3totalscore = player3totalscore + icecreamData.icecream13;
+            player3totalscore +=  icecreamData.icecream13;
         }
 
     }
